@@ -1,0 +1,14 @@
+@import "~@fortawesome/fontawesome-pro/css/all.min.css";
+
+@include font-face("ElmRegular", "/fonts/ElmRegular");
+@include font-face("ElmBold", "/fonts/ElmBold", bold);
+
+
+* {
+    font-family: "ElmRegular", Arial, Helvetica, sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+a:hover{
+    text-decoration: none;
+  }

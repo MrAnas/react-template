@@ -1,0 +1,30 @@
+.menu-item {
+    color: #fff;
+    background: theme-color("primary");
+    *{
+    transition: margin 0.2s ease;
+    }
+    &:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    &:hover{
+        background-color: #fff;
+        margin-right:3px;
+        color: theme-color("primary");
+        text-decoration: none;
+
+        img{
+            margin-right:5px;
+            filter: invert(5);
+        }
+    }
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: theme-color("primary");
+    padding: 2.5em 0em 0;
+    font-size: 1.35em;
+}
+

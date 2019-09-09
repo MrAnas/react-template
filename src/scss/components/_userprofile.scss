@@ -1,0 +1,238 @@
+.userProfile {
+  background: $white;
+  padding: 10px;
+  border-radius: 2px;
+  margin: 5px 0 0;
+  float: left;
+  z-index: 3;
+  min-width: 270px;
+  position: relative;
+  margin-right: 10px;
+  z-index: 1000;
+}
+
+.userName:hover {
+  text-decoration: none;
+}
+
+.profilePic {
+  float: right;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  border: 2px solid #eaeaea;
+  margin: 4px 0 4px 15px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.profilePic i {
+  color: $white;
+  font-size: 25px;
+  position: relative;
+  top: 9px;
+}
+
+.userName {
+  font-size: 16px;
+  color: #555555;
+  display: block;
+  line-height: 22px;
+  margin: 6px 0 1px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 130px;
+}
+
+.companyName,
+.positionName {
+  font-size: 14px;
+  color: #9d9d9d;
+  z-index: 1;
+}
+
+.companyName,
+.positionName i {
+  font-size: 11px;
+  margin: 0 5px
+}
+
+.loggedActions>li>a {
+  color: #949494;
+  font-size: 24px;
+  position: relative;
+  display: inline-block
+}
+
+.loggedActions>li>a:focus,
+.loggedActions>li>a:hover {
+  color: $primary;
+  text-decoration: none;
+}
+
+.loggedActions>li>a span {
+  font-size: 13px;
+  display: inline-block;
+  min-width: 20px;
+  height: 20px;
+  background-color: $danger;
+  padding: 6px 5px 2px;
+  line-height: 4px;
+  color: $white;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  right: -9px;
+}
+
+.loggedActions>li {
+  display: inline-block;
+  margin: 0px 10px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0;
+}
+
+.loggedActions {
+  float: left;
+  margin: 10px 0;
+}
+
+.loggedDetails {
+  float: right;
+  /* min-width: 200px; */
+  position: relative;
+  padding-left: 15px;
+  margin-left: 0;
+  padding-bottom: 5px;
+}
+
+.mobileProfile {
+  display: none
+}
+
+.mobileMenu {
+  display: none
+}
+
+.loginLinks {
+  float: left;
+  margin: 5px 0 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.loginLinks a {
+  padding: 59px 10px 9px;
+  border-radius: 2px;
+  border: 1px solid #eee;
+  display: inline-block;
+  /* height: 100px; */
+  margin-right: 8px;
+  color: #555;
+  min-width: 110px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.loginLinks a:hover,
+.loginLinks a:focus {
+  text-decoration: none;
+  border: 1px solid #bbb;
+}
+
+@media screen and (min-width:0) and (max-width:767px) {
+  .userProfile {
+    width: 100%;
+    z-index: 999;
+    border-radius: 0;
+    clear: both;
+    padding: 5px 10px 5px 20px;
+    margin: 5px 0 10px;
+    background: #fafafa;
+
+  }
+
+
+
+  .userProfile .notificationscontainer {
+    right: -40px;
+    width: 260px
+  }
+
+  .loginLinks a.userRegister,
+  .loginLinks a.userLogin {
+    background: none;
+    padding-top: 3px;
+    height: auto;
+    margin-top: 10px;
+  }
+}
+
+/* Notifications */
+
+.notification {
+  display: inline-block;
+  position: relative;
+  padding: 0.2em;
+  border-radius: 0.2em;
+  font-size: 1.3em;
+}
+
+.notification::before,
+.notification::after {
+  color: #bcbcbc;
+}
+
+.notification::before {
+  display: block;
+  // content: "\f0f3";
+  font-family: "Font Awesome 5 Pro";
+  transform-origin: top center;
+}
+
+.notification::after {
+  font-family: Arial;
+  font-size: 0.3em;
+  font-weight: 700;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  padding: 2px 4px;
+  line-height: 100%;
+  border: 2px #fff solid;
+  border-radius: 60px;
+  background: #3498db;
+  opacity: 0;
+  content: attr(data-count);
+  opacity: 0;
+  transform: scale(0.5);
+  transition: transform, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+
+.notification.show-count::after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+#popover-basic.popover{
+  box-shadow: 1px 1px 4px #a2a2a2;
+  padding: 5px;
+  border:0;
+
+}
+
+#popover-basic.popover a{
+  text-decoration: none;
+}
+
+#popover-basic.popover a:hover h5{
+  background-color: #E8E8E8;
+  color: theme-color($secondary);
+}

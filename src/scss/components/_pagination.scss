@@ -1,0 +1,16 @@
+.pagination{
+        flex-direction: row-reverse;
+    .page-item{
+        margin: 5px;
+        .page-link{
+            border-radius: 0;
+        }
+
+        &.active{
+            .page-link{
+            background: theme-color("secondary");
+            border: theme-color("secondary");
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.btn{
+    font-size: 1.4em;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.btn-primary{
+    background: linear-gradient(180deg, #C655C8 0%, #952D98 100%);
+    background-position: 0 0;
+    background-size: 300% 100%;
+    border:0;
+    transition: all 0.25s ease;
+
+    &:hover{
+        box-shadow: 0 2px 15px 0 #C655C8;
+    }
+}
